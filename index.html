@@ -20,8 +20,9 @@
             <li><a href="#"></a>About</li>
             <li><a href="#"></a>Application</li>
             <li><a href="#"></a>History</li>
-            <button class="st-btn" type="submit">Login</button>
-            <button type="submit">Sign Up</button>
+            
+            <li class="login"><a href="login.html">Login</a></li>
+            <li class="sign-in"><a href="sign-in.html">Sign Up</a></li>
           </ul>
         </div>
         
@@ -185,6 +186,9 @@
           </div>
       </section>
     <script src="index.js">
+
+      <button onclick="loadPage()">load Page</button>
+      <div id="content"></div>
       document.addEventListener("DOMContentLoaded", function() {
     const menuToggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
