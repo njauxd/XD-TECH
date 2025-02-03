@@ -11,7 +11,7 @@
       <h1>XD-<span>TECH</span></h1>
     </header>
     <div class="Main-image">
-      <img src="images/mic.png" alt="">
+      <img src="images/njau.png" alt="">
     </div>
       <section>
         <div class="navbar">
@@ -28,7 +28,7 @@
         <div class="content">
           <h2>
             Welcome to XD-TECH <br />
-            24/7 <span>Computer</span> Services
+            24/7 <span>TECH</span> Services
             <p class="para">
               At our tech institution, we pride ourselves <br />on providing
               comprehensive learning skills.
@@ -56,13 +56,13 @@
       </section>
 
       <section id="Main">
-      <h2 class="sp-heading">0ur <span>Co</span>nsolting <span>Sp</span>ecialist</h2>
+      <h2 class="sp-heading">0ur <span>Co</span>nsolting <br> <span>Sp</span>ecialist</h2>
       <section class="main">
         <div class="Card-one">
           <p>
             <img  src="images/comp-A.png" alt="">
             <h3>Data Analysis</h3>
-            Data analysis is essentially the process of examining, cleaning, transforming, and modeling data to discover useful information, draw conclusions.
+            Data analysis is essentially the process of examining, cleaning, transforming, and modeling data to discover useful information.
           </p>
         </div>
 
@@ -70,7 +70,7 @@
           <p>
             <img src="images/comp-B.png" alt="">
             <h3>Progrmming Laguages</h3>
-            Programming is like giving a computer a set of instructions to perform specific tasks. Think of it as writing a recipe where you tell the computer exactly what to do.
+            Programming is like giving a computer a set of instructions to perform specific tasks. Think of it as writing a recipe.
           </p>
         </div>
 
@@ -117,7 +117,8 @@
           <div class="author">
             
             <img src="images/author.png"  alt="" >   NjauXD  ⭐⭐⭐⭐⭐
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Obcaecati amet officia ut soluta explicabo sapiente dolorum debitis, rem architecto doloremque veritatis voluptas.</p>
+            <p>I sincerely appriciate your effort and dedication. <br> Your hard work does not go unnoticed and i am truly greateful
+              for all that you do.</p>
           </div>
         </div>
       </section>
@@ -157,7 +158,7 @@
           <div class="footer">
             <div class="foter-section">
               <h3>Review</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <p>Technology has transformed our lives in countless ways.
               </p>
               <p>Follow us:</p>
               <p class="social-link">
@@ -183,6 +184,26 @@
             </div>
           </div>
       </section>
-    <script src="script.js"></script>
+    <script src="index.js">
+      document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    // Toggle menu visibility on button click
+    menuToggle.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
+    });
+
+    // Adjust styles based on window size
+    function handleResize() {
+        if (window.innerWidth > 768) {
+            navLinks.classList.remove("active");
+        }
+    }
+
+    window.addEventListener("resize", handleResize);
+});
+
+    </script>
   </body>
 </html>
